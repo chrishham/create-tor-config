@@ -1,0 +1,29 @@
+{
+  "name": "create-tor-config",
+  "version": "1.0.0",
+  "description": "Script to initiate multiple tor configurations",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prepkg": "rm -rf dist",
+    "pkg": "pkg --options max_old_space_size=8192 --targets linux,mac --out-path dist ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrishham/create-tor-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrishham/create-tor-config/issues"
+  },
+  "homepage": "https://github.com/chrishham/create-tor-config#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs-extra": "^9.0.0",
+    "os": "^0.1.1",
+    "shelljs": "^0.8.3"
+  }
+}
